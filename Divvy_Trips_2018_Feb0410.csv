@@ -1,4 +1,4 @@
-Rental ID,Local Start Time,Local End Time,Bike ID,Duration In Seconds Uncapped,Start Station ID,Start Station Name,End Station ID,End Station Name,User Type,Member Gender,Member Birthday Year
+Rental ID,Local Start Time,Local End Time,Bike ID,Duration In Seconds,Start Station ID,Start Station Name,End Station ID,End Station Name,User Type,Member Gender,Member Birthday Year
 17682754,2018-02-04 00:01:04,2018-02-04 00:03:58,2754,174.0,333,Ashland Ave & Blackhawk St,16,Paulina Ave & North Ave,Subscriber,Male,1992
 17682755,2018-02-04 00:02:24,2018-02-04 00:07:14,4948,290.0,123,California Ave & Milwaukee Ave,290,Kedzie Ave & Palmer Ct,Subscriber,Female,1988
 17682756,2018-02-04 00:06:04,2018-02-04 00:20:29,736,865.0,81,Daley Center Plaza,394,Clark St & 9th St (AMLI),Subscriber,Male,1995
