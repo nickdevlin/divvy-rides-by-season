@@ -17,6 +17,8 @@ The differences between the two parser files are largely semantic due to differe
 
 From there, I took the data and built my visualization. Unable to open the CSV files within the Javascript file that contains the code for the Google visualization, I input that data manually. The result can be seen below or by cloning this repo and opening locally.
 
+![screenshot](divvy-visualization.png)
+
 ## Conclusion
 
 It would appear, as you might expect, that Chicagoans are less inclined to go for long bike rides in the winter than in the summer. The average ride was longer in the summer for each day we checked with the starkest differences coming on Saturday (21.0 mins vs 10.5) and Sunday (22.8 vs 13.4). Friday was very close (16.4 vs 15.5), which may owe to the fact that there's one ride in particular in February that lasted more than 25 hours. However, I didn't examine each of the days for outliers due to the size of the dataset and this may be par for the course. More analysis would be needed to draw a conclusion there.
