@@ -21,7 +21,7 @@ From there, I took the data and built my visualization. Unable to open the CSV f
 
 ## Conclusion
 
-It would appear, as you might expect, that Chicagoans are less inclined to go for long bike rides in the winter than in the summer. The average ride was longer in the summer for each day we checked with the starkest differences coming on Saturday (21.0 mins vs 10.5) and Sunday (22.8 vs 13.4). Friday was very close (16.4 vs 15.5), which may owe to the fact that there's one ride in particular in February that lasted more than 25 hours. However, I didn't examine each of the days for outliers due to the size of the dataset and this may be par for the course. More analysis would be needed to draw a conclusion there.
+It would appear, as you might expect, that Chicagoans are less inclined to go for long bike rides in the winter than in the summer. The average ride was longer in the summer for each day we checked with the starkest differences coming on Saturday (21.0 mins vs 10.5) and Sunday (22.8 vs 13.4). Friday was very close (16.4 vs 15.5), which may owe to the fact that there was one ride in particular in the February week that lasted more than 25 hours. That said, I didn't examine each of the days for outliers due to the size of the dataset, so rides of this length may be par for the course. More analysis would be needed to draw a conclusion there.
 
 ## What's Next?
 
