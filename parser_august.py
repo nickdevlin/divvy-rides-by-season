@@ -4,6 +4,7 @@ Group trips by day in order to average trip time.
 """
 
 import csv
+import pandas as pd
 from statistics import mean
 
 # create place to store ride durations for each day
@@ -38,17 +39,17 @@ with open('Divvy_Trips_2017_Aug0612.csv') as csvfile:
         # use ride date to fetch appropriate list from dict, append ride length
         date_dict[ride_date].append(ride_length)
 
-# open new CSV file to store averages
-with open("averages_august17.csv", mode="w") as csv_file:
-    avg_writer = csv.writer(
-        csv_file, delimiter=",", quotechar='"', quoting=csv.QUOTE_MINIMAL
-    )
-    # get average time for each day, round to
-    # one decimal place, write as row in CSV
-    avg_writer.writerow(["Sunday", round(mean(sun_times) / 60, 1)])
-    avg_writer.writerow(["Monday", round(mean(mon_times) / 60, 1)])
-    avg_writer.writerow(["Tuesday", round(mean(tues_times) / 60, 1)])
-    avg_writer.writerow(["Wednesday", round(mean(wed_times) / 60, 1)])
-    avg_writer.writerow(["Thursday", round(mean(thurs_times) / 60, 1)])
-    avg_writer.writerow(["Friday", round(mean(fri_times) / 60, 1)])
-    avg_writer.writerow(["Saturday", round(mean(sat_times) / 60, 1)])
+
+day_lists = [sun_times, mon_times, tues_times, wed_times,
+             thurs_times, fri_times, sat_times]
+days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday',
+        'Thursday', 'Friday', 'Saturday']
+avg_ride_times = []
+
+for day in day_lists:
+    daily_average = round(mean(day) / 60, 1)
+    avg_ride_times.append(daily_average)
+
+d = {'day': days, 'ride_length': avg_ride_times}
+df = pd.DataFrame(data=d)
+df.to_csv('avgs_aug17.csv', index=False)
