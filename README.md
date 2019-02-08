@@ -15,7 +15,9 @@ My first step was to write files in Python that would act as parsers. These file
 
 The differences between the two parser files are largely semantic due to differences in the Q1 2018 and Q3 2017 datasets. They could be rewritten as a single parser in the future, using an ARGV input to indicate the CSV file to intake. For now, the filenames are hardcoded in each.
 
-From there, I took the data and built my visualization. Unable to open the CSV files within the Javascript file that contains the code for the Google visualization, I input that data manually. The result can be seen below or by cloning this repo and opening locally.
+From there, I took the data and built my visualization. Unable to open the CSV files within the Javascript file that contains the code for the Google visualization, I input that data manually.
+
+[Click here](https://chi-bikes.herokuapp.com/) to see the final result in interactive form, or see the screenshot below.
 
 ![screenshot](divvy-visualization.png)
 
